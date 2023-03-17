@@ -19,7 +19,7 @@ RUN useradd user -m -s /usr/sbin/nologin
 
 # copy the source code
 #WORKDIR /home/user/app
-RUN mkdir -p /frontend
+RUN mkdir -p /frontend/build
 COPY ./src ./
 
 # fix ownership of stuff inside application folder
